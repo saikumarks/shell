@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source_dir="/home/saikumar/source"
-target_dir="/opt/tomcat/webapps/"
-TOMCAT_HOME="/opt/tomcat"
+source_dir="ssh saikumar@192.168.1.94/home/saikumar/source"
+target_dir="ssh saikumar@192.168.1.94/opt/tomcat/webapps/"
+TOMCAT_HOME="ssh saikumar@192.168.1.94/opt/tomcat"
 
 function filePermissions() {
     echo "################### File Permissions Done ###################"
