@@ -51,7 +51,7 @@ function stopTomcat() {
 	./shutdown.sh
 	echo "################### Tomcat server stopped. ###################"
 }
-
+set -x
 function moveFile() {
 	CURRENT_DATE="$(date +'%d''%b''%Y')"
 	local backup_file="$TOMCAT_HOME/backp/$CURRENT_DATE"
@@ -135,4 +135,4 @@ startTomcat
 
 sleep 5
 showFilesInTargetDirectory
-
+set +x
