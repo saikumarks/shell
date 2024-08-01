@@ -4,6 +4,7 @@ pipeline {
 		stage('build') {
 		 steps {
 			echo 'Building........... '
+			  sh "chmod +x -R ${env.movefile}"
 			sh './movefile.sh'
 		}
 	 }
