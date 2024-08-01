@@ -7,33 +7,33 @@ TOMCAT_HOME="/opt/tomcat"
 function filePermissions() {
 	echo "################### File Permissions Done ###################"
 
-	find /opt/tomcat/ -type d -exec chmod 777 {} \;
+	#find /opt/tomcat/ -type d -exec chmod 777 {} \;
 
-	chmod -R g+w "$TOMCAT_HOME/work/Catalina/localhost"
+	#chmod -R g+w "$TOMCAT_HOME/work/Catalina/localhost"
 	
-	chmod -R g+w "$TOMCAT_HOME/logs"
+	#chmod -R g+w "$TOMCAT_HOME/logs"
 	
-	chmod -R g+w "$TOMCAT_HOME/temp"
+	#chmod -R g+w "$TOMCAT_HOME/temp"
 	
-	rm -rf "$TOMCAT_HOME/work/Catalina/localhost/"*
+	#rm -rf "$TOMCAT_HOME/work/Catalina/localhost/"*
 	
-	rm -rf "$TOMCAT_HOME/logs/"*
+	#rm -rf "$TOMCAT_HOME/logs/"*
 	
-	rm -rf "$TOMCAT_HOME/temp/"*
+	#rm -rf "$TOMCAT_HOME/temp/"*
 	
-	#sudo chmod 777 -R /opt/tomcat/
+	sudo chmod 777 -R /opt/tomcat/
 
-	#cd /opt/tomcat/work/Catalina/localhost/
+	cd /opt/tomcat/work/Catalina/localhost/
 
-	#rm -r -f *
+	rm -r -f *
 
-	#cd /opt/tomcat/logs/
+	cd /opt/tomcat/logs/
 
-	#rm -r -f *
+	rm -r -f *
 
-	#cd /opt/tomcat/temp/
+	cd /opt/tomcat/temp/
 
-	#rm -r -f *
+	rm -r -f *
 	
 	
 
